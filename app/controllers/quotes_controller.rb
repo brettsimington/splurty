@@ -1,5 +1,5 @@
 class QuotesController < ApplicationController
   def index
-    @quote = Quote.second
+    @quote = Quote.all.sample
   end
 end
